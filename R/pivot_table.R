@@ -9,6 +9,8 @@
 #' @param cols A vector of variable names that will be on the columns of the pivot table
 #' @param ... calculations that are passed to `dplyr::summarise()` via the `cube()` function
 #' 
+#' @import magrittr
+#' 
 #' @return a tibble
 #' 
 #' @export

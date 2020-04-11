@@ -7,6 +7,8 @@
 #' @param ... calculations passed to dplyr::summarize()
 #' @param .totals = "Total"
 #' 
+#' @import magrittr
+#' 
 #' @export
 #' 
 #' @examples

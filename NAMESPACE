@@ -2,3 +2,4 @@
 
 export(cube)
 export(pvt)
+import(magrittr)
