@@ -55,7 +55,7 @@ pvt <- function(df, rows = NULL, cols = NULL, ..., .totals = "Total", .keep_tota
   res <- switch(.keep_total,
                 "all" = res,
                 "overall" = dplyr::bind_rows(dplyr::filter_at(res, tidyselect::all_of(rnames), ~ .x != .totals | is.na(.x)),
-                                             dplyr::slice(res, n())),
+                                             dplyr::slice(res, dplyr::n())),
                 "none" =  dplyr::filter_at(res, tidyselect::all_of(rnames), ~ .x != .totals))
   
   return(res)

@@ -16,19 +16,19 @@
 
 cube <- function(df, groups, ..., .totals = "Total"){
   groups <- rlang::enquos(groups)
-  rnames <- dplyr::select(df, !!!groups) %>% names()
+  rnames <- dplyr::select(df, !!!groups) %>% base::names()
   calculations <- rlang::enquos(...)
   
   add_rnames_columns <- function(df, total_replacement = .totals){
-    cols_to_add <- setdiff(rnames, names(df))
+    cols_to_add <- base::setdiff(rnames, base::names(df))
     if(length(cols_to_add) > 0 & !is.na(.totals)){
       for( r in cols_to_add ){
-        df <- mutate(df, !! r := total_replacement)
+        df <- dplyr::mutate(df, !! r := total_replacement)
       }}
     return(df)
   }
 
-  combinations <- purrr::map(c(0, seq_along(rnames)), ~ combn(rnames, .x) %>% as.data.frame(stringsAsFactors = FALSE) )
+  combinations <- purrr::map(c(0, base::seq_along(rnames)), ~ utils::combn(rnames, .x) %>% base::as.data.frame(stringsAsFactors = FALSE) )
   purrr::map(combinations,  
              ~ purrr::map(.x, ~ dplyr::group_by_at(df, .x) %>%
                             dplyr::summarize( !!!calculations ) %>%
