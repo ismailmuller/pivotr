@@ -14,7 +14,8 @@
 #' @examples
 #' cube(mtcars, c(cyl, am), Avg = mean(mpg))
 
-cube <- function(df, groups, ..., .totals = "Total"){
+cube <- function(df, groups = NULL, ..., .totals = "Total"){
+  if( missing(df) || (!is.data.frame(df)) ){stop("df must be of class data.frame")}
   groups <- rlang::enquos(groups)
   rnames <- dplyr::select(df, !!!groups) %>% base::names()
   calculations <- rlang::enquos(...)
@@ -29,14 +30,18 @@ cube <- function(df, groups, ..., .totals = "Total"){
   }
 
   combinations <- purrr::map(c(0, base::seq_along(rnames)), ~ utils::combn(rnames, .x) %>% base::as.data.frame(stringsAsFactors = FALSE) )
-  purrr::map(combinations,  
+  res <- purrr::map(combinations,
              ~ purrr::map(.x, ~ dplyr::group_by_at(df, .x) %>%
                             dplyr::summarize( !!!calculations ) %>%
-                            dplyr::ungroup() %>% 
-                            dplyr::mutate_at(tidyselect::all_of(.x), as.character) %>% 
-                            add_rnames_columns()) %>% 
+                            dplyr::ungroup() %>%
+                            dplyr::mutate_at(tidyselect::all_of(.x), as.character) %>%
+                            add_rnames_columns()) %>%
                dplyr::bind_rows()) %>%
     dplyr::bind_rows() %>%
     dplyr::select_at( dplyr::vars( tidyselect::all_of(rnames), dplyr::everything() ) ) %>%
-    dplyr::arrange_at( tidyselect::all_of(rnames) )
+    dplyr::arrange_at( tidyselect::all_of(rnames), ~ (!is.na(.x) & .x == .totals )  )
+  
+  if( any(dim(res) == 0) ){stop("No combinations, nor calculations")}
+  
+  return(res)
 }
