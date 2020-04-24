@@ -4,29 +4,30 @@
 #'
 #' @param df A dataframe
 #' @param groups variables names
-#' @param ... calculations passed to dplyr::summarize()
-#' @param .totals = "Total"
+#' @param ... calculations passed to `dplyr::summarize(...)`
+#' @param .totals A string of how output totals are labeled in the rows and cols
 #' 
 #' @import magrittr
 #' 
 #' @export
 #' 
-#' @examples
+#' @example
 #' cube(mtcars, c(cyl, am), Avg = mean(mpg))
 
 cube <- function(df, groups = NULL, ..., .totals = "Total"){
-  if( missing(df) || (!is.data.frame(df)) ){stop("df must be of class data.frame")}
+  if( missing(df) || (!is.data.frame(df)) ){base::stop("df must be of class data.frame")}
   groups <- rlang::enquos(groups)
   rnames <- dplyr::select(df, !!!groups) %>% base::names()
   calculations <- rlang::enquos(...)
   
   add_rnames_columns <- function(df, total_replacement = .totals){
     cols_to_add <- base::setdiff(rnames, base::names(df))
-    if(length(cols_to_add) > 0 & !is.na(.totals)){
+    if(base::length(cols_to_add) > 0 & !base::is.na(.totals)){
       for( r in cols_to_add ){
         df <- dplyr::mutate(df, !! r := total_replacement)
-      }}
-    return(df)
+      }
+      }
+    base::return(df)
   }
 
   combinations <- purrr::map(c(0, base::seq_along(rnames)), ~ utils::combn(rnames, .x) %>% base::as.data.frame(stringsAsFactors = FALSE) )
@@ -41,7 +42,7 @@ cube <- function(df, groups = NULL, ..., .totals = "Total"){
     dplyr::select_at( dplyr::vars( tidyselect::all_of(rnames), dplyr::everything() ) ) %>%
     dplyr::arrange_at( tidyselect::all_of(rnames), ~ (!is.na(.x) & .x == .totals )  )
   
-  if( any(dim(res) == 0) ){stop("No combinations, nor calculations")}
+  if( base::any(base::dim(res) == 0) ){base::stop("No combinations, nor calculations")}
   
   return(res)
 }

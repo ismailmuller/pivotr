@@ -6,19 +6,19 @@ Authors@R:
            family = "Muller",
            role = c("aut", "cre"),
            email = "muller.ismail@gmail.com")
-Description: The pivottanle package computes pivot tables using the `dplyr` package as backend
+Description: pivotr computes pivot tables using the `dplyr` package as backend
 Imports: 
-  dplyr, 
-  rlang, 
-  tidyselect, 
+  dplyr,
+  magrittr,
   purrr,
+  rlang, 
   tidyr,
-  magrittr
+  tidyselect
 License: MIT
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.0
-URL: https://github.com/ismailmuller/pivottable
-BugReports: https://github.com/ismailmuller/pivottable/issues
+URL: https://ismailmuller.github.io/pivotr/
+BugReports: https://github.com/ismailmuller/pivotr/issues
 Suggests: 
     testthat (>= 2.1.0)

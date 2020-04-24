@@ -4,20 +4,17 @@
 \alias{cube}
 \title{Computes grouped aggregates}
 \usage{
-cube(df, groups, ..., .totals = "Total")
+cube(df, groups = NULL, ..., .totals = "Total")
 }
 \arguments{
 \item{df}{A dataframe}
 
 \item{groups}{variables names}
 
-\item{...}{calculations passed to dplyr::summarize()}
+\item{...}{calculations passed to `dplyr::summarize(...)`}
 
-\item{.totals}{= "Total"}
+\item{.totals}{A string of how output totals are labeled in the rows and cols}
 }
 \description{
 Calculates aggregates functions for groups of variables and all their combinations
-}
-\examples{
-cube(mtcars, c(cyl, am), Avg = mean(mpg))
 }

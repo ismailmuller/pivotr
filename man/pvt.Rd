@@ -13,7 +13,11 @@ pvt(df, rows = NULL, cols = NULL, ..., .totals = "Total", .keep_total = "all")
 
 \item{cols}{A vector of variable names that will be on the columns of the pivot table}
 
-\item{...}{calculations that are passed to `dplyr::summarise()` via the `cube()` function}
+\item{...}{calculations that are passed to `dplyr::summarise()` via the `pivotr::cube()` function}
+
+\item{.totals}{A string of how output totals are labeled in the rows and cols}
+
+\item{.keep_total}{one of "all", "overall", "none"}
 }
 \value{
 a tibble
