@@ -1,4 +1,4 @@
 library(testthat)
-library(pivottable)
+library(pivotr)
 
-test_check("pivottable")
+test_check("pivotr")
