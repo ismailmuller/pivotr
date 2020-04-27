@@ -4,6 +4,7 @@ library(testthat)
 
 X <- data.frame(x = 1:4, y = letters[1:2], z = c(10, 100, 20, 40),
                 x2 = c(letters[1:3], NA), stringsAsFactors = FALSE )
+
 test_that("Correct dimensions and values", {
   # when no grouping variable
   expect_equal(cube(X, NULL, AVG = mean(z)), data.frame(AVG = 42.5))
@@ -27,6 +28,3 @@ test_that("errors", {
   expect_error(cube(X, NULL))
   expect_error(cube(X, zoo))
 })
-
-
-

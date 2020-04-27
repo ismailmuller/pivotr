@@ -23,10 +23,12 @@ pvt(df, rows = NULL, cols = NULL, ..., .totals = "Total", .keep_total = "all")
 a tibble
 }
 \description{
-Calculates aggregates in pivot tables
+Calculates aggregates in pivot tables 
+   \Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 }
 \examples{
 
+pvt(mtcars, N = n())
 pvt(mtcars, cyl, am, N = n(), Avg = mean(mpg))
 pvt(mtcars, cyl, am, Avg = mean(wt), N = n())
 pvt(mtcars, NULL, am, Avg = mean(wt))

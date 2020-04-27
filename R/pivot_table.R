@@ -1,6 +1,7 @@
 #' Pivot table
 #' 
-#' @description Calculates aggregates in pivot tables
+#' @description Calculates aggregates in pivot tables 
+#'    \Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 #' 
 #' @author Ismail Muller
 #'
@@ -19,13 +20,13 @@
 #' 
 #' @examples 
 #' 
+#' pvt(mtcars, N = n())
 #' pvt(mtcars, cyl, am, N = n(), Avg = mean(mpg))
 #' pvt(mtcars, cyl, am, Avg = mean(wt), N = n())
 #' pvt(mtcars, NULL, am, Avg = mean(wt))
 #' pvt(mtcars, c(vs,am), cyl, N = n(), .keep_total = "overall")
 
 pvt <- function(df, rows = NULL, cols = NULL, ..., .totals = "Total", .keep_total = "all"){
-  calculations <- rlang::enquos(...)
   rows <- rlang::enquos(rows)
   cols <- rlang::enquos(cols)
   rnames <- dplyr::select(df, !!!rows ) %>% base::names()
@@ -33,34 +34,39 @@ pvt <- function(df, rows = NULL, cols = NULL, ..., .totals = "Total", .keep_tota
   groups <- base::c(rnames, cnames)
   groups <- groups[!base::is.null(groups)]
   
-  the_cube <- pivotr::cube(df, groups = tidyselect::all_of(groups), !!!calculations, .totals = .totals)
+  if( base::all(base::is.na(groups)) ){
+    the_cube <- pivotr::cube(df, ..., .totals = .totals)
+  } else {
+    the_cube <- pivotr::cube(df, groups = tidyselect::all_of(groups), ..., .totals = .totals)
+  }
+  
   calcnames <- base::setdiff(base::names(the_cube), base::c(rnames, cnames))
   
   # pivot only if cols is not null
   if(base::length(cnames) > 0){
-    res <- tidyr::pivot_wider(
+    the_cube <- tidyr::pivot_wider(
       the_cube,
       id_cols = tidyselect::all_of(rnames),
       names_from = tidyselect::all_of(cnames),
       values_from = tidyselect::all_of(calcnames))
   } else {
-    res <- the_cube
+    the_cube <- the_cube
   }
   
   # arrange the rows
-  res <- res %>% 
+  the_cube <- the_cube %>% 
     dplyr::mutate_at(tidyselect::all_of(rnames), as.character) %>% 
     dplyr::arrange_at(tidyselect::all_of(rnames), 
                       .funs = base::list(function(x){!base::is.na(x) & x == "Total"} ))
   
   # keep only the wanted totals
-  res <- base::switch(.keep_total,
-                "all" = res,
-                "overall" = dplyr::bind_rows(dplyr::filter_at(res, tidyselect::all_of(rnames), ~ .x != .totals | base::is.na(.x)),
-                                             dplyr::slice(res, dplyr::n())),
-                "none" =  dplyr::filter_at(res, tidyselect::all_of(rnames), ~ .x != .totals))
+  the_cube <- base::switch(.keep_total,
+                "all" = the_cube,
+                "overall" = dplyr::bind_rows(dplyr::filter_at(the_cube, tidyselect::all_of(rnames), ~ .x != .totals | base::is.na(.x)),
+                                             dplyr::slice(the_cube, dplyr::n())),
+                "none" =  dplyr::filter_at(the_cube, tidyselect::all_of(rnames), ~ .x != .totals))
   
-  base::return(res)
+  base::return(the_cube)
 }
 
 pivot_table <- pvt

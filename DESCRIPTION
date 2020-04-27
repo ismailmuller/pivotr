@@ -8,12 +8,13 @@ Authors@R:
            email = "muller.ismail@gmail.com")
 Description: pivotr computes pivot tables using the `dplyr` package as backend
 Imports: 
-  dplyr,
-  magrittr,
-  purrr,
-  rlang, 
-  tidyr,
-  tidyselect
+    dplyr,
+    magrittr,
+    purrr,
+    rlang,
+    tidyr,
+    tidyselect,
+    lifecycle
 License: MIT
 Encoding: UTF-8
 LazyData: true
@@ -21,4 +22,6 @@ RoxygenNote: 7.1.0
 URL: https://ismailmuller.github.io/pivotr/
 BugReports: https://github.com/ismailmuller/pivotr/issues
 Suggests: 
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
+    covr
+RdMacros: lifecycle
