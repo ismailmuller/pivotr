@@ -23,5 +23,6 @@ URL: https://ismailmuller.github.io/pivotr/
 BugReports: https://github.com/ismailmuller/pivotr/issues
 Suggests: 
     testthat (>= 2.1.0),
-    covr
+    covr,
+    pkgdown
 RdMacros: lifecycle

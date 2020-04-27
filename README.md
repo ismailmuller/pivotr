@@ -9,6 +9,8 @@
 coverage](https://codecov.io/gh/ismailmuller/pivotr/branch/master/graph/badge.svg)](https://codecov.io/gh/ismailmuller/pivotr?branch=master)
 [![Lifecycle
 Status](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build
+status](https://travis-ci.com/ismailmuller/pivotr.svg?branch=master)](https://travis-ci.com/ismailmuller/pivotr)
 <!-- badges: end -->
 
 The goal of pivotr is to compute pivot tables by using the `tidyverse`
@@ -22,6 +24,16 @@ You can install the development version from
 ``` r
 # install.packages("devtools")
 devtools::install_github("ismailmuller/pivotr")
+#> 
+#>      checking for file ‘/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpwFNwm6/remotes18af39ff7691/ismailmuller-pivotr-4467f94/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpwFNwm6/remotes18af39ff7691/ismailmuller-pivotr-4467f94/DESCRIPTION’ (528ms)
+#>   ─  preparing ‘pivotr’:
+#>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
+#>   ─  installing the package to process help pages
+#>   ─  checking for LF line-endings in source and make files and shell scripts (2.3s)
+#>   ─  checking for empty or unneeded directories
+#>   ─  building ‘pivotr_0.0.0.9000.tar.gz’
+#>      
+#> 
 ```
 
 ## Example
