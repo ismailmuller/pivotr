@@ -27,7 +27,7 @@ The goal of pivotr is to compute pivot tables by using the `tidyverse` syntax.
 
 You can install the development version from [GitHub](https://github.com/ismailmuller/pivotr) with:
 
-```{r, message=FALSE}
+```{r, message=FALSE, results='hide'}
 # install.packages("devtools")
 devtools::install_github("ismailmuller/pivotr")
 ```
