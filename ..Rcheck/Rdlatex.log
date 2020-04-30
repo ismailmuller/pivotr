@@ -1,0 +1,416 @@
+Hmm ... looks like a package
+
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2018-12-01>
+
+(./Rd2.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.dfu)))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.
+sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-generic.s
+ty)) (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+ (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/hyperref.cfg))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+) (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+No file Rd2.aux.
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/gettitlestring.s
+ty)) (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ot1zi4.fd)
+
+LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 19.
+
+[1{/Users/Ismail/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Overfull \hbox (0.49597pt too wide) in paragraph at lines 89--91
+[]\OT1/cmr/m/n/10 calculations that are passed to `dplyr::summarise()` via the 
+`piv-otr::cube()`
+No file Rd2.ind.
+[2]
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information) </Users/Ismail/.TinyTeX/te
+xmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>{/Users/Ismail/Library/TinyT
+eX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}</Users/Ismail/Library/T
+inyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/I
+smail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></Use
+rs/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsl10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (2 pages, 115212 bytes).
+Transcript written on Rd2.log.
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2018-12-01>
+
+(./Rd2.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.dfu)))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.
+sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-generic.s
+ty)) (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+ (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/hyperref.cfg))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+) (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.aux)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/gettitlestring.s
+ty))
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.out)
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.out)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ot1zi4.fd)
+
+LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 19.
+
+
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.toc) [1{/Users/Ismail/Library/TinyTeX/texmf-var/fonts/map/pdftex/u
+pdmap/pdftex.map}]
+Overfull \hbox (0.49597pt too wide) in paragraph at lines 89--91
+[]\OT1/cmr/m/n/10 calculations that are passed to `dplyr::summarise()` via the 
+`piv-otr::cube()`
+No file Rd2.ind.
+[2]
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information) </Users/Ismail/.TinyTeX/te
+xmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>{/Users/Ismail/Library/TinyT
+eX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}</Users/Ismail/Library/T
+inyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/I
+smail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></Use
+rs/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsl10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (2 pages, 115384 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (2 entries accepted, 0 rejected).
+Sorting entries....done (2 comparisons).
+Generating output file Rd2.ind....done (9 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2018-12-01>
+
+(./Rd2.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.dfu)))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.
+sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-generic.s
+ty)) (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+ (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/hyperref.cfg))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+) (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.aux)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/gettitlestring.s
+ty))
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.out)
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.out)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ot1zi4.fd)
+
+LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 19.
+
+
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.toc) [1{/Users/Ismail/Library/TinyTeX/texmf-var/fonts/map/pdftex/u
+pdmap/pdftex.map}]
+Overfull \hbox (0.49597pt too wide) in paragraph at lines 89--91
+[]\OT1/cmr/m/n/10 calculations that are passed to `dplyr::summarise()` via the 
+`piv-otr::cube()`
+
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.ind [2] [3])
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information) </Users/Ismail/.TinyTeX/te
+xmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>{/Users/Ismail/Library/TinyT
+eX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}</Users/Ismail/Library/T
+inyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/I
+smail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></Use
+rs/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsl10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (3 pages, 116525 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (2 entries accepted, 0 rejected).
+Sorting entries....done (2 comparisons).
+Generating output file Rd2.ind....done (9 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2018-12-01>
+
+(./Rd2.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.dfu)))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.
+sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-generic.s
+ty)) (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+ (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/hyperref.cfg))
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+) (/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.aux)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/gettitlestring.s
+ty))
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.out)
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.out)
+(/Users/Ismail/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ot1zi4.fd)
+
+LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 19.
+
+
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.toc) [1{/Users/Ismail/Library/TinyTeX/texmf-var/fonts/map/pdftex/u
+pdmap/pdftex.map}]
+Overfull \hbox (0.49597pt too wide) in paragraph at lines 89--91
+[]\OT1/cmr/m/n/10 calculations that are passed to `dplyr::summarise()` via the 
+`piv-otr::cube()`
+
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.ind [2] [3])
+(/private/var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T/RtmpY7VCCP/Rd2pdf4fa7
+38dfb60f/Rd2.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information) </Users/Ismail/.TinyTeX/te
+xmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>{/Users/Ismail/Library/TinyT
+eX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}</Users/Ismail/Library/T
+inyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/I
+smail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></Use
+rs/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsl10.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb></Users/Ismail/Library/TinyTeX/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (3 pages, 116851 bytes).
+Transcript written on Rd2.log.
+Saving output to ‘pivotr-manual.pdf’ ...
+Done
+You may want to clean up by 'rm -Rf /var/folders/kb/kd78f2457rg8vlykm85f160w0000gn/T//RtmpY7VCCP/Rd2pdf4fa738dfb60f'

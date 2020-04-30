@@ -1,0 +1,141 @@
+
+R version 4.0.0 (2020-04-24) -- "Arbor Day"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "pivotr"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> base::assign(".ExTimings", "pivotr-Ex.timings", pos = 'CheckExEnv')
+> base::cat("name\tuser\tsystem\telapsed\n", file=base::get(".ExTimings", pos = 'CheckExEnv'))
+> base::assign(".format_ptime",
++ function(x) {
++   if(!is.na(x[4L])) x[1L] <- x[1L] + x[4L]
++   if(!is.na(x[5L])) x[2L] <- x[2L] + x[5L]
++   options(OutDec = '.')
++   format(x[1L:3L], digits = 7L)
++ },
++ pos = 'CheckExEnv')
+> 
+> ### * </HEADER>
+> library('pivotr')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("cube")
+> ### * cube
+> 
+> flush(stderr()); flush(stdout())
+> 
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: cube
+> ### Title: Computes grouped aggregates
+> ### Aliases: cube
+> 
+> ### ** Examples
+> 
+> cube(mtcars, c(cyl, am), Avg = mean(mpg))
+[90m# A tibble: 12 x 3[39m
+   cyl   am      Avg
+   [3m[90m<chr>[39m[23m [3m[90m<chr>[39m[23m [3m[90m<dbl>[39m[23m
+[90m 1[39m 4     0      22.9
+[90m 2[39m 4     1      28.1
+[90m 3[39m 6     0      19.1
+[90m 4[39m 6     1      20.6
+[90m 5[39m 8     0      15.0
+[90m 6[39m 8     1      15.4
+[90m 7[39m 4     Total  26.7
+[90m 8[39m 6     Total  19.7
+[90m 9[39m 8     Total  15.1
+[90m10[39m Total 0      17.1
+[90m11[39m Total 1      24.4
+[90m12[39m Total Total  20.1
+> 
+> 
+> 
+> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+> base::cat("cube", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+> cleanEx()
+> nameEx("pvt")
+> ### * pvt
+> 
+> flush(stderr()); flush(stdout())
+> 
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: pvt
+> ### Title: Pivot table
+> ### Aliases: pvt
+> 
+> ### ** Examples
+> 
+> 
+> pvt(mtcars, N = n())
+[90m# A tibble: 1 x 1[39m
+      N
+  [3m[90m<int>[39m[23m
+[90m1[39m    32
+> pvt(mtcars, cyl, am, N = n(), Avg = mean(mpg))
+[90m# A tibble: 4 x 7[39m
+  cyl     N_0   N_1 N_Total Avg_0 Avg_1 Avg_Total
+  [3m[90m<chr>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m   [3m[90m<int>[39m[23m [3m[90m<dbl>[39m[23m [3m[90m<dbl>[39m[23m     [3m[90m<dbl>[39m[23m
+[90m1[39m 4         3     8      11  22.9  28.1      26.7
+[90m2[39m 6         4     3       7  19.1  20.6      19.7
+[90m3[39m 8        12     2      14  15.0  15.4      15.1
+[90m4[39m Total    19    13      32  17.1  24.4      20.1
+> pvt(mtcars, cyl, am, Avg = mean(wt), N = n())
+[90m# A tibble: 4 x 7[39m
+  cyl   Avg_0 Avg_1 Avg_Total   N_0   N_1 N_Total
+  [3m[90m<chr>[39m[23m [3m[90m<dbl>[39m[23m [3m[90m<dbl>[39m[23m     [3m[90m<dbl>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m   [3m[90m<int>[39m[23m
+[90m1[39m 4      2.94  2.04      2.29     3     8      11
+[90m2[39m 6      3.39  2.76      3.12     4     3       7
+[90m3[39m 8      4.10  3.37      4.00    12     2      14
+[90m4[39m Total  3.77  2.41      3.22    19    13      32
+> pvt(mtcars, NULL, am, Avg = mean(wt))
+[90m# A tibble: 1 x 3[39m
+    `0`   `1` Total
+  [3m[90m<dbl>[39m[23m [3m[90m<dbl>[39m[23m [3m[90m<dbl>[39m[23m
+[90m1[39m  3.77  2.41  3.22
+> pvt(mtcars, c(vs, am), cyl, N = n(), .keep_total = "overall")
+[90m# A tibble: 5 x 6[39m
+  vs    am      `8`   `4`   `6` Total
+  [3m[90m<chr>[39m[23m [3m[90m<chr>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m
+[90m1[39m 0     0        12    [31mNA[39m    [31mNA[39m    12
+[90m2[39m 0     1         2     1     3     6
+[90m3[39m 1     0        [31mNA[39m     3     4     7
+[90m4[39m 1     1        [31mNA[39m     7    [31mNA[39m     7
+[90m5[39m Total Total    14    11     7    32
+> 
+> 
+> 
+> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+> base::cat("pvt", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  1.77 0.067 1.845 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

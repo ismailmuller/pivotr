@@ -16,7 +16,7 @@ cube(df, groups = NULL, ..., .totals = "Total")
 \item{.totals}{A string of how output totals are labeled in the rows and cols}
 }
 \description{
-Calculates aggregates functions for groups of variables 
+Calculates aggregates functions for groups of variables
    and all their combinations
    \Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 }

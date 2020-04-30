@@ -9,13 +9,17 @@ pvt(df, rows = NULL, cols = NULL, ..., .totals = "Total", .keep_total = "all")
 \arguments{
 \item{df}{A dataframe}
 
-\item{rows}{A vector of variable names that will be on the rows of the pivot table}
+\item{rows}{A vector of variable names that will
+be on the rows of the pivot table}
 
-\item{cols}{A vector of variable names that will be on the columns of the pivot table}
+\item{cols}{A vector of variable names that will be
+on the columns of the pivot table}
 
-\item{...}{calculations that are passed to `dplyr::summarise()` via the `pivotr::cube()` function}
+\item{...}{calculations that are passed to `dplyr::summarise()`
+via the `pivotr::cube()` function}
 
-\item{.totals}{A string of how output totals are labeled in the rows and cols}
+\item{.totals}{A string of how output totals are labeled
+in the rows and cols}
 
 \item{.keep_total}{one of "all", "overall", "none"}
 }
@@ -23,7 +27,7 @@ pvt(df, rows = NULL, cols = NULL, ..., .totals = "Total", .keep_total = "all")
 a tibble
 }
 \description{
-Calculates aggregates in pivot tables 
+Calculates aggregates in pivot tables
    \Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 }
 \examples{
@@ -32,7 +36,7 @@ pvt(mtcars, N = n())
 pvt(mtcars, cyl, am, N = n(), Avg = mean(mpg))
 pvt(mtcars, cyl, am, Avg = mean(wt), N = n())
 pvt(mtcars, NULL, am, Avg = mean(wt))
-pvt(mtcars, c(vs,am), cyl, N = n(), .keep_total = "overall")
+pvt(mtcars, c(vs, am), cyl, N = n(), .keep_total = "overall")
 }
 \author{
 Ismail Muller

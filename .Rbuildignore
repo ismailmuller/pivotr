@@ -6,3 +6,4 @@
 ^pkgdown$
 ^codecov\.yml$
 ^\.travis\.yml$
+^LICENSE\.md$
