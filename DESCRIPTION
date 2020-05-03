@@ -1,10 +1,10 @@
 Package: pivotr
 Title: Pivot Tables with the Tidyverse
-Version: 0.0.0.9000
+Version: 0.0.1
 Author: Ismail Muller <muller.ismail@gmail.com>
 Maintainer: Ismail Muller <muller.ismail@gmail.com>
 Description: 
-    Computes pivot tables using the `dplyr` package as backend.
+    Computes pivot tables using the dplyr package as backend.
 Imports: 
     dplyr,
     magrittr,

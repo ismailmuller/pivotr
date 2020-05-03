@@ -28,7 +28,6 @@ a tibble
 }
 \description{
 Calculates aggregates in pivot tables
-   \Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 }
 \examples{
 

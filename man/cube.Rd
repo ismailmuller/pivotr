@@ -18,7 +18,6 @@ cube(df, groups = NULL, ..., .totals = "Total")
 \description{
 Calculates aggregates functions for groups of variables
    and all their combinations
-   \Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 }
 \examples{
 cube(mtcars, c(cyl, am), Avg = mean(mpg))

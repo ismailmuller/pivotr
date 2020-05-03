@@ -1,7 +1,6 @@
 #' Pivot table
 #'
 #' @description Calculates aggregates in pivot tables
-#'    \Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 #'
 #' @author Ismail Muller
 #'
